@@ -36,6 +36,15 @@ body {
   background-color: #15191C;
   width: 78vw;
   height: 100vh;
+
+  position: absolute;
+  left: -100vw;
+  transition:.25s;
+}
+
+.menu-lateral--activo{
+  left: 0;
+  transition: .25s;
 }
 
 .menu-lateral__logo{
