@@ -1,14 +1,31 @@
-body{
-  background-color: #1D232A;
-  font-family: 'Opens Sans', sans-serif;
-  color: #FFFFFF;
+@font-face {
+  font-family: "icones";
+  src: url(../font/icones.ttf);
+}
+body {
+  background-color: #1d232a;
+  font-family: "Opens Sans", icones, sans-serif;
+  color: #ffffff;
 }
 
-.cabecalho{
-  display:flex;
+.cabecalho {
+  display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: #15191C;
+  background-color: #15191c;
   padding: 8px 16px;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.16);
+}
+.cabecalho__menu i::before{
+  content: "\e904";
+  font-size: 24px;
+}
+
+.cabecalho__notificacao i::before{
+  content: "\e906";
+  font-size: 24px;
+}
+
+.cabecalho__logo{
+  width: 40px;
 }
